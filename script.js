@@ -3,13 +3,13 @@ function compute()
     var principal = parseInt(document.getElementById("principal").value);
 
     if(document.getElementById("principal").value == ''){
-        alert('This field cannot be blank');
+        alert('Enter a positive number');
         document.getElementById("principal").focus();
         return;
     }
 
     if(principal <= 0 ){
-        alert('Enter a valid number');
+        alert('Enter a positive number');
         document.getElementById("principal").focus();
         return;
     }
@@ -24,3 +24,4 @@ function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval+'%';
+}
